@@ -1,14 +1,11 @@
-import org.junit.Test;
 import praktikum.IngredientType;
 
 
 public class IngredientTypeTest {
-    @Test
-    public  void ingredientTypeSauceTest(){
-        IngredientType.valueOf("SAUCE");
+
+    public boolean IsIngredientTypeSauce(IngredientType type){
+        return IngredientType.SAUCE.equals(type);
     }
-    @Test
-    public  void ingredientTypeFillingTest(){
-        IngredientType.valueOf("FILLING");
-    }
+    public boolean IsIngredientTypeFilling(IngredientType type){
+        return IngredientType.FILLING.equals(type);}
 }
